@@ -85,3 +85,17 @@ body {
     width: 150px;
     border-radius:  50% 20% / 10% 40%;
 }
+@media screen and (min-width: 900px) {
+  article {
+    padding: 1rem 3rem;
+  }
+}
+
+/* Nested within another conditional at-rule */
+@supports (display: flex) {
+  @media screen and (min-width: 900px) {
+    article {
+      display: flex;
+    }
+  }
+}
